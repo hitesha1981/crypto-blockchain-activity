@@ -1,6 +1,6 @@
 # Crypto Network Reliability Dashboard
 
-Author: Hitesh Agrawal
+Author: Hitesh Agrawal (hitesha1981@gmail.com)
 
 This repository implements an automated, on-chain reliability and activity dashboard
 for major blockchain networks using direct JSON-RPC calls via GetBlock.io.
@@ -19,7 +19,7 @@ The README itself acts as the dashboard and is regenerated automatically on a sc
 demonstrating a production-style, infrastructure-focused observability workflow rather
 than a traditional UI-driven approach.
 
-_Last updated: 2026-01-02 09:27 UTC_
+_Last updated: 2026-01-02 09:56 UTC_
 
 ## API Usage (GetBlock.io)
 - Calls used: **24**
@@ -27,8 +27,8 @@ _Last updated: 2026-01-02 09:27 UTC_
 ## Network Metrics
 | Chain | Block Height | TX Count | TPS (10 blk avg) | Block Util | Avg Fee |
 |------|-------------|----------|------------------|------------|---------|
-| Ethereum | 24146038 | 374 | 31.17 | 61.15% | 0.1 Gwei |
-| Bitcoin | 930556 | 3804 | 6.32 | 99.8% | N/A |
+| Ethereum | 24146191 | 143 | 11.92 | 29.44% | 0.0 Gwei |
+| Bitcoin | 930559 | 50 | 3.57 | 2.29% | N/A |
 
 ## Visuals
 ### Transactions Trend
@@ -43,9 +43,7 @@ _Last updated: 2026-01-02 09:27 UTC_
 ## Whale Alerts (latest block)
 - Transaction hashes are truncated for readability.
 - Full hashes are available in `dashboards/metrics.json`
-- Bitcoin | 240.72 BTC | `345ed468bf2b…`
-- Bitcoin | 261.03 BTC | `83508b28fb50…`
-- Bitcoin | 152.77 BTC | `be82325a5943…`
+- Bitcoin | 116.67 BTC | `f06b7966ac5d…`
 
 ## Run locally
 
