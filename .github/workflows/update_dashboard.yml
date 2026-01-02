@@ -42,5 +42,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update on-chain dashboard"
-          file_pattern: 'README.md dashboards/*'
           branch: main
+          file_pattern: |
+            README.md
+            dashboards/
