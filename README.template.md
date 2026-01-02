@@ -5,7 +5,7 @@ Author: Hitesh Agrawal (hitesha1981@gmail.com)
 This repository implements an automated, on-chain reliability and activity dashboard
 for major blockchain networks using direct JSON-RPC calls via GetBlock.io.
 
-The system periodically collects low-level network signals such as:
+The system periodically (once every 24h) collects low-level network signals such as:
 - latest block height
 - transaction throughput per block
 - fee pressure indicators
@@ -15,7 +15,7 @@ All data is gathered directly from blockchain RPC endpoints (no price or market 
 rendered into human-readable tables and charts using Python and Matplotlib, and published
 as a self-updating README via GitHub Actions.
 
-The README itself acts as the dashboard and is regenerated automatically on a schedule,
+The README itself acts as the dashboard and is regenerated automatically on a 24 Hour schedule,
 demonstrating a production-style, infrastructure-focused observability workflow rather
 than a traditional UI-driven approach.
 
