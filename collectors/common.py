@@ -17,4 +17,13 @@ class RPCClient:
         r = requests.post(self.endpoint, json=payload, headers=headers, timeout=15)
         if r.status_code != 200:
             raise RuntimeError(f"RPC failed {r.status_code}: {r.text}")
-        return r.json()["result"]
+        
+        resp = r.json()
+        if "error" in resp and resp["error"]:
+             raise RuntimeError(f"RPC error: {resp['error']}")
+        return resp["result"]
+
+def calculate_tps(tx_count, time_delta):
+    if time_delta <= 0: 
+        return 0.0
+    return round(tx_count / time_delta, 2)

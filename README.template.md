@@ -28,7 +28,14 @@ _Last updated: {{TIME}}_
 {{TABLE}}
 
 ## Visuals
+### Transactions Trend
 ![Transactions](dashboards/tx_per_block.png)
+
+### TPS Trend (Last 10 Blocks)
+![TPS Trend](dashboards/tps_trend.png)
+
+### Fee Trend
+![Fee Trend](dashboards/fee_trend.png)
 
 ## Whale Alerts (latest block)
 - Transaction hashes are truncated for readability.
