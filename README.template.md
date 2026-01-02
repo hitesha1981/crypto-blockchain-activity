@@ -1,6 +1,6 @@
 # Crypto Network Reliability Dashboard
 
-Author: Hitesh Agrawal
+Author: Hitesh Agrawal (hitesha1981@gmail.com)
 
 This repository implements an automated, on-chain reliability and activity dashboard
 for major blockchain networks using direct JSON-RPC calls via GetBlock.io.
