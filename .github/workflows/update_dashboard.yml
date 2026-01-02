@@ -49,34 +49,25 @@ jobs:
       #     echo "==================================================="
         
 
-      - name: Debug metrics content (CI view)
-        run: |
-          echo "==== metrics.json (first 200 lines) ===="
-          sed -n '1,200p' dashboards/metrics.json || true
-          echo
-          echo "==== SHA256 checksums ===="
-          sha256sum dashboards/metrics.json dashboards/tx_per_block.png || true
+      # - name: Debug metrics content (CI view)
+      #   run: |
+      #     echo "==== metrics.json (first 200 lines) ===="
+      #     sed -n '1,200p' dashboards/metrics.json || true
+      #     echo
+      #     echo "==== SHA256 checksums ===="
+      #     sha256sum dashboards/metrics.json dashboards/tx_per_block.png || true
 
-      - name: Debug git diff
-        run: |
-          echo "==== git status ===="
-          git status
-          echo
-          echo "==== git diff (dashboards) ===="
-          git diff -- dashboards/ || true
-          echo
-          echo "==== git diff --stat ===="
-          git diff --stat || true
+      # - name: Debug git diff
+      #   run: |
+      #     echo "==== git status ===="
+      #     git status
+      #     echo
+      #     echo "==== git diff (dashboards) ===="
+      #     git diff -- dashboards/ || true
+      #     echo
+      #     echo "==== git diff --stat ===="
+      #     git diff --stat || true
         
-
-      # - name: Commit and push dashboard updates
-      #   uses: stefanzweifel/git-auto-commit-action@v5
-      #   with:
-      #     commit_message: "chore: update on-chain dashboard"
-      #     branch: main
-      #     file_pattern: |
-      #       README.md
-      #       dashboards/
 
       - name: Commit and push dashboard updates
         uses: EndBug/add-and-commit@v9
