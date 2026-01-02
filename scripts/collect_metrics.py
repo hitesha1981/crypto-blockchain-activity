@@ -1,4 +1,7 @@
 import os, json
+from dotenv import load_dotenv
+load_dotenv()
+
 from datetime import datetime, UTC
 from pathlib import Path
 from collectors import ethereum, bitcoin
