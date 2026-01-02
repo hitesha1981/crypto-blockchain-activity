@@ -38,15 +38,15 @@ jobs:
       - name: Render README dashboard
         run: uv run python -m scripts.render_readme
 
-      - name: Debug metrics.json content (CI)
-        run: |
-          echo "================ metrics.json (CI) ================"
-          if [ -f dashboards/metrics.json ]; then
-            cat dashboards/metrics.json
-          else
-            echo "metrics.json not found"
-          fi
-          echo "==================================================="
+      # - name: Debug metrics.json content (CI)
+      #   run: |
+      #     echo "================ metrics.json (CI) ================"
+      #     if [ -f dashboards/metrics.json ]; then
+      #       cat dashboards/metrics.json
+      #     else
+      #       echo "metrics.json not found"
+      #     fi
+      #     echo "==================================================="
         
 
       - name: Debug metrics content (CI view)
@@ -69,11 +69,22 @@ jobs:
           git diff --stat || true
         
 
+      # - name: Commit and push dashboard updates
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     commit_message: "chore: update on-chain dashboard"
+      #     branch: main
+      #     file_pattern: |
+      #       README.md
+      #       dashboards/
+
       - name: Commit and push dashboard updates
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: EndBug/add-and-commit@v9
         with:
-          commit_message: "chore: update on-chain dashboard"
-          branch: main
-          file_pattern: |
+          message: "chore: update on-chain dashboard"
+          add: |
             README.md
             dashboards/
+          author_name: Hitesh Agrawal
+          author_email: hitesha1981@gmail.com
+            
