@@ -19,7 +19,7 @@ The README itself acts as the dashboard and is regenerated automatically on a sc
 demonstrating a production-style, infrastructure-focused observability workflow rather
 than a traditional UI-driven approach.
 
-_Last updated: 2026-01-02 07:27 UTC_
+_Last updated: 2026-01-02 07:35 UTC_
 
 ## API Usage (GetBlock.io)
 - Calls used: **5**
@@ -27,7 +27,7 @@ _Last updated: 2026-01-02 07:27 UTC_
 ## Network Metrics
 | Chain | Block Height | TX Count | Avg Fee |
 |------|-------------|----------|---------|
-| Ethereum | 24145449 | 335 | 0.34 |
+| Ethereum | 24145490 | 264 | 0.33 |
 | Bitcoin | 930544 | 3639 | N/A |
 
 ## Visuals
