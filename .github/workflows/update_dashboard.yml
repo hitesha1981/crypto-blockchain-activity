@@ -1,0 +1,46 @@
+name: Update Crypto Network Dashboard
+
+on:
+  schedule:
+    - cron: '0 1 * * *' # Runs daily at 01:00 midnight UTC
+  workflow_dispatch:  # Allows manual triggering
+
+permissions:
+  contents: write
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        run: |
+          curl -Ls https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Sync dependencies
+        run: uv sync --frozen
+
+      - name: Collect on-chain metrics
+        env:
+          GETBLOCK_ETH_ENDPOINT: ${{ secrets.GETBLOCK_ETH_ENDPOINT }}
+          GETBLOCK_BTC_ENDPOINT: ${{ secrets.GETBLOCK_BTC_ENDPOINT }}
+        run: uv run python -m scripts.collect_metrics
+
+      - name: Render README dashboard
+        run: uv run python -m scripts.render_readme
+
+      - name: Commit and push dashboard updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update on-chain dashboard"
+          file_pattern: 'README.md dashboards/*'
+          branch: main

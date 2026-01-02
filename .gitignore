@@ -1,0 +1,31 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ---- Virtual environments ----
+.venv/
+venv/
+ENV/
+env/
+
+# ---- uv ----
+uv.lock
+
+# ---- Environment / secrets ----
+.env
+.env.*
+*.env
+
+# ---- Generated dashboard artifacts ----
+dashboards/*.png
+dashboards/metrics.json
+
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+*.log
+tmp/
