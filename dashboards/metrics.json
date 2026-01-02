@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-01-02T07:39:16.890140+00:00",
+  "api_usage": {
+    "used": 5,
+    "remaining": 499995
+  },
+  "chains": [
+    {
+      "chain": "Ethereum",
+      "block_height": 24145507,
+      "tx_count": 283,
+      "avg_fee": 0.29,
+      "whales": []
+    },
+    {
+      "chain": "Bitcoin",
+      "block_height": 930544,
+      "tx_count": 3639,
+      "avg_fee": null,
+      "whales": [
+        {
+          "txid": "bad43f7d4a13d1d2a0e5a1c5700a6cf7b65c7c0f32c3f375cfac4eaaac8a2fc0",
+          "value_btc": 293.85
+        },
+        {
+          "txid": "9a42bd453b0ff1700c22708677647b1a8fa677975746d8f178cc59994da8941b",
+          "value_btc": 185.0
+        },
+        {
+          "txid": "d347c2f0a153324788ea815baf65d259d4a46a2b7bf98fd0a990b3472ed57b1e",
+          "value_btc": 612.56
+        },
+        {
+          "txid": "5e26920d86675b322e25a8e650c747c501fa9f74c4caf01e09c0da7264f71568",
+          "value_btc": 257.08
+        },
+        {
+          "txid": "1f8584888a94e6049087caa66478137989d877c04bc930fff2e08f88f3480f0f",
+          "value_btc": 100.18
+        }
+      ]
+    }
+  ]
+}
