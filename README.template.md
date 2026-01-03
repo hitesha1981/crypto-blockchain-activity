@@ -5,7 +5,7 @@ Author: Hitesh Agrawal (hitesha1981@gmail.com)
 This repository implements an automated, on-chain reliability and activity dashboard
 for major blockchain networks using direct JSON-RPC calls via GetBlock.io.
 
-The system periodically (once every 24h) collects low-level network signals such as:
+The system periodically (Runs every 6 hours, 15 minute past the hour) collects low-level network signals such as:
 - latest block height
 - transaction throughput per block
 - fee pressure indicators
@@ -70,7 +70,7 @@ uv run python -m scripts.render_readme
 
 ## How the system works
 
-1. GitHub Actions runs every 24 hours
+1. GitHub Actions runs every 6 hours, 15 minute past the hour
 2. Chain-specific collectors fetch on-chain metrics
 3. API usage is counted centrally
 4. Metrics are written to JSON
