@@ -2,7 +2,7 @@ name: Update Crypto Network Dashboard
 
 on:
   schedule:
-    - cron: '0 1 * * *' # Runs daily at 01:00 midnight UTC
+    - cron: '15 */6 * * *' # Runs every 6 hours, 15 minute past the hour. 
   workflow_dispatch:  # Allows manual triggering
 
 permissions:
