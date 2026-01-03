@@ -5,7 +5,7 @@ Author: Hitesh Agrawal (hitesha1981@gmail.com)
 This repository implements an automated, on-chain reliability and activity dashboard
 for major blockchain networks using direct JSON-RPC calls via GetBlock.io.
 
-The system periodically collects low-level network signals such as:
+The system periodically (once every 24h) collects low-level network signals such as:
 - latest block height
 - transaction throughput per block
 - fee pressure indicators
@@ -15,11 +15,11 @@ All data is gathered directly from blockchain RPC endpoints (no price or market 
 rendered into human-readable tables and charts using Python and Matplotlib, and published
 as a self-updating README via GitHub Actions.
 
-The README itself acts as the dashboard and is regenerated automatically on a schedule,
+The README itself acts as the dashboard and is regenerated automatically on a 24 Hour schedule,
 demonstrating a production-style, infrastructure-focused observability workflow rather
 than a traditional UI-driven approach.
 
-_Last updated: 2026-01-02 09:56 UTC_
+_Last updated: 2026-01-03 02:46 UTC_
 
 ## API Usage (GetBlock.io)
 - Calls used: **24**
@@ -27,8 +27,8 @@ _Last updated: 2026-01-02 09:56 UTC_
 ## Network Metrics
 | Chain | Block Height | TX Count | TPS (10 blk avg) | Block Util | Avg Fee |
 |------|-------------|----------|------------------|------------|---------|
-| Ethereum | 24146191 | 143 | 11.92 | 29.44% | 0.0 Gwei |
-| Bitcoin | 930559 | 50 | 3.57 | 2.29% | N/A |
+| Ethereum | 24151219 | 345 | 28.75 | 43.12% | 0.0 Gwei |
+| Bitcoin | 930646 | 3437 | 2.53 | 99.79% | N/A |
 
 ## Visuals
 ### Transactions Trend
@@ -43,7 +43,11 @@ _Last updated: 2026-01-02 09:56 UTC_
 ## Whale Alerts (latest block)
 - Transaction hashes are truncated for readability.
 - Full hashes are available in `dashboards/metrics.json`
-- Bitcoin | 116.67 BTC | `f06b7966ac5d…`
+- Bitcoin | 19659.22 BTC | `383379432495…`
+- Bitcoin | 233.98 BTC | `18dee290f5a1…`
+- Bitcoin | 956.28 BTC | `f49c5e1ea02f…`
+- Bitcoin | 101.34 BTC | `5ccf4730cd8e…`
+- Bitcoin | 108.75 BTC | `c17ae5a46232…`
 
 ## Run locally
 
