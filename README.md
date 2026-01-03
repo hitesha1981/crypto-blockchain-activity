@@ -5,7 +5,7 @@ Author: Hitesh Agrawal (hitesha1981@gmail.com)
 This repository implements an automated, on-chain reliability and activity dashboard
 for major blockchain networks using direct JSON-RPC calls via GetBlock.io.
 
-The system periodically (Runs every 6 hours, 15 minute past the hour) collects low-level network signals such as:
+The system periodically runs every 6 hours collects low-level network signals such as:
 - latest block height
 - transaction throughput per block
 - fee pressure indicators
@@ -19,7 +19,7 @@ The README itself acts as the dashboard and is regenerated automatically on a 6 
 demonstrating a production-style, infrastructure-focused observability workflow rather
 than a traditional UI-driven approach.
 
-_Last updated: 2026-01-03 06:47 UTC_
+_Last updated: 2026-01-03 12:59 UTC_
 
 ## API Usage (GetBlock.io)
 - Calls used: **24**
@@ -27,8 +27,8 @@ _Last updated: 2026-01-03 06:47 UTC_
 ## Network Metrics
 | Chain | Block Height | TX Count | TPS (10 blk avg) | Block Util | Avg Fee |
 |------|-------------|----------|------------------|------------|---------|
-| Ethereum | 24152423 | 323 | 26.92 | 66.71% | 0.0 Gwei |
-| Bitcoin | 930670 | 3247 | 21.08 | 99.79% | N/A |
+| Ethereum | 24154273 | 287 | 23.92 | 38.67% | 0.1 Gwei |
+| Bitcoin | 930716 | 3641 | 9.58 | 99.79% | N/A |
 
 ## Visuals
 ### Transactions Trend
@@ -43,8 +43,7 @@ _Last updated: 2026-01-03 06:47 UTC_
 ## Whale Alerts (latest block)
 - Transaction hashes are truncated for readability.
 - Full hashes are available in `dashboards/metrics.json`
-- Bitcoin | 100.01 BTC | `236bef29d935…`
-- Bitcoin | 4519.7 BTC | `e5b77fada956…`
+- Bitcoin | 232.18 BTC | `78a3ac69e5a4…`
 
 ## Run locally
 
