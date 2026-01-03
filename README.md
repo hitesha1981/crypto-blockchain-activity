@@ -5,7 +5,7 @@ Author: Hitesh Agrawal (hitesha1981@gmail.com)
 This repository implements an automated, on-chain reliability and activity dashboard
 for major blockchain networks using direct JSON-RPC calls via GetBlock.io.
 
-The system periodically (once every 24h) collects low-level network signals such as:
+The system periodically (Runs every 6 hours, 15 minute past the hour) collects low-level network signals such as:
 - latest block height
 - transaction throughput per block
 - fee pressure indicators
@@ -15,11 +15,11 @@ All data is gathered directly from blockchain RPC endpoints (no price or market 
 rendered into human-readable tables and charts using Python and Matplotlib, and published
 as a self-updating README via GitHub Actions.
 
-The README itself acts as the dashboard and is regenerated automatically on a 24 Hour schedule,
+The README itself acts as the dashboard and is regenerated automatically on a 6 Hour schedule,
 demonstrating a production-style, infrastructure-focused observability workflow rather
 than a traditional UI-driven approach.
 
-_Last updated: 2026-01-03 02:46 UTC_
+_Last updated: 2026-01-03 06:47 UTC_
 
 ## API Usage (GetBlock.io)
 - Calls used: **24**
@@ -27,8 +27,8 @@ _Last updated: 2026-01-03 02:46 UTC_
 ## Network Metrics
 | Chain | Block Height | TX Count | TPS (10 blk avg) | Block Util | Avg Fee |
 |------|-------------|----------|------------------|------------|---------|
-| Ethereum | 24151219 | 345 | 28.75 | 43.12% | 0.0 Gwei |
-| Bitcoin | 930646 | 3437 | 2.53 | 99.79% | N/A |
+| Ethereum | 24152423 | 323 | 26.92 | 66.71% | 0.0 Gwei |
+| Bitcoin | 930670 | 3247 | 21.08 | 99.79% | N/A |
 
 ## Visuals
 ### Transactions Trend
@@ -43,11 +43,8 @@ _Last updated: 2026-01-03 02:46 UTC_
 ## Whale Alerts (latest block)
 - Transaction hashes are truncated for readability.
 - Full hashes are available in `dashboards/metrics.json`
-- Bitcoin | 19659.22 BTC | `383379432495…`
-- Bitcoin | 233.98 BTC | `18dee290f5a1…`
-- Bitcoin | 956.28 BTC | `f49c5e1ea02f…`
-- Bitcoin | 101.34 BTC | `5ccf4730cd8e…`
-- Bitcoin | 108.75 BTC | `c17ae5a46232…`
+- Bitcoin | 100.01 BTC | `236bef29d935…`
+- Bitcoin | 4519.7 BTC | `e5b77fada956…`
 
 ## Run locally
 
@@ -77,7 +74,7 @@ uv run python -m scripts.render_readme
 
 ## How the system works
 
-1. GitHub Actions runs every 24 hours
+1. GitHub Actions runs every 6 hours, 15 minute past the hour
 2. Chain-specific collectors fetch on-chain metrics
 3. API usage is counted centrally
 4. Metrics are written to JSON
