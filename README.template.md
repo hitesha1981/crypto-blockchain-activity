@@ -15,7 +15,7 @@ All data is gathered directly from blockchain RPC endpoints (no price or market 
 rendered into human-readable tables and charts using Python and Matplotlib, and published
 as a self-updating README via GitHub Actions.
 
-The README itself acts as the dashboard and is regenerated automatically on a 24 Hour schedule,
+The README itself acts as the dashboard and is regenerated automatically on a 6 Hour schedule,
 demonstrating a production-style, infrastructure-focused observability workflow rather
 than a traditional UI-driven approach.
 
