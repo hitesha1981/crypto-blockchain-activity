@@ -19,7 +19,7 @@ The README itself acts as the dashboard and is regenerated automatically on a 6 
 demonstrating a production-style, infrastructure-focused observability workflow rather
 than a traditional UI-driven approach.
 
-_Last updated: 2026-02-06 13:34 UTC_
+_Last updated: 2026-02-06 19:07 UTC_
 
 ## API Usage (GetBlock.io)
 - Calls used: **24**
@@ -27,8 +27,8 @@ _Last updated: 2026-02-06 13:34 UTC_
 ## Network Metrics
 | Chain | Block Height | TX Count | TPS (10 blk avg) | Block Util | Avg Fee |
 |------|-------------|----------|------------------|------------|---------|
-| Ethereum | 24398111 | 327 | 27.25 | 66.55% | 0.8 Gwei |
-| Bitcoin | 935258 | 2087 | 3.84 | 68.43% | N/A |
+| Ethereum | 24399765 | 61 | 5.08 | 22.65% | 0.3 Gwei |
+| Bitcoin | 935292 | 2966 | 20.74 | 99.8% | N/A |
 
 ## Visuals
 ### Transactions Trend
@@ -43,11 +43,11 @@ _Last updated: 2026-02-06 13:34 UTC_
 ## Whale Alerts (latest block)
 - Transaction hashes are truncated for readability.
 - Full hashes are available in `dashboards/metrics.json`
-- Bitcoin | 207.36 BTC | `4941f97825d6…`
-- Bitcoin | 158.41 BTC | `410fffcc0c4f…`
-- Bitcoin | 200.0 BTC | `d60d261ba2b9…`
-- Bitcoin | 104.69 BTC | `bc236ab59cd9…`
-- Bitcoin | 285.75 BTC | `5dfebb9f2c30…`
+- Bitcoin | 890.0 BTC | `26c1695da91f…`
+- Bitcoin | 275.58 BTC | `4638e48e8559…`
+- Bitcoin | 303.46 BTC | `56a70de4439e…`
+- Bitcoin | 247.83 BTC | `83f9bdb86f21…`
+- Bitcoin | 183.22 BTC | `41f7ef1f43ae…`
 
 ## Run locally
 
