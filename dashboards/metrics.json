@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T04:02:06.016613+00:00",
+  "generated_at": "2026-04-29T08:32:05.702263+00:00",
   "api_usage": {
     "used": 24,
     "remaining": 499976
@@ -7,192 +7,204 @@
   "chains": [
     {
       "chain": "Ethereum",
-      "block_height": 24983216,
-      "tx_count": 684,
-      "avg_fee": 0.56,
-      "tps": 57.0,
-      "utilization": 43.75,
+      "block_height": 24984563,
+      "tx_count": 378,
+      "avg_fee": 0.82,
+      "tps": 31.5,
+      "utilization": 56.3,
       "whales": [],
       "history": [
         {
-          "height": 24983207,
-          "tx_count": 371,
-          "base_fee_gwei": 0.48,
+          "height": 24984554,
+          "tx_count": 870,
+          "base_fee_gwei": 0.64,
           "tps": 0.0,
-          "utilization": 48.25,
-          "timestamp": 1777435187
+          "utilization": 89.3,
+          "timestamp": 1777451387
         },
         {
-          "height": 24983208,
-          "tx_count": 307,
-          "base_fee_gwei": 0.47,
-          "tps": 25.58,
-          "utilization": 30.14,
-          "timestamp": 1777435199
+          "height": 24984555,
+          "tx_count": 487,
+          "base_fee_gwei": 0.7,
+          "tps": 40.58,
+          "utilization": 60.7,
+          "timestamp": 1777451399
         },
         {
-          "height": 24983209,
-          "tx_count": 650,
-          "base_fee_gwei": 0.45,
-          "tps": 54.17,
-          "utilization": 60.91,
-          "timestamp": 1777435211
+          "height": 24984556,
+          "tx_count": 569,
+          "base_fee_gwei": 0.72,
+          "tps": 47.42,
+          "utilization": 64.14,
+          "timestamp": 1777451411
         },
         {
-          "height": 24983210,
-          "tx_count": 550,
-          "base_fee_gwei": 0.46,
-          "tps": 45.83,
-          "utilization": 74.45,
-          "timestamp": 1777435223
+          "height": 24984557,
+          "tx_count": 139,
+          "base_fee_gwei": 0.75,
+          "tps": 11.58,
+          "utilization": 9.46,
+          "timestamp": 1777451423
         },
         {
-          "height": 24983211,
-          "tx_count": 1116,
-          "base_fee_gwei": 0.49,
-          "tps": 93.0,
-          "utilization": 78.91,
-          "timestamp": 1777435235
+          "height": 24984558,
+          "tx_count": 769,
+          "base_fee_gwei": 0.67,
+          "tps": 64.08,
+          "utilization": 98.78,
+          "timestamp": 1777451435
         },
         {
-          "height": 24983212,
-          "tx_count": 464,
-          "base_fee_gwei": 0.53,
-          "tps": 38.67,
-          "utilization": 48.67,
-          "timestamp": 1777435247
+          "height": 24984559,
+          "tx_count": 316,
+          "base_fee_gwei": 0.75,
+          "tps": 26.33,
+          "utilization": 29.4,
+          "timestamp": 1777451447
         },
         {
-          "height": 24983213,
-          "tx_count": 748,
-          "base_fee_gwei": 0.53,
-          "tps": 62.33,
-          "utilization": 62.13,
-          "timestamp": 1777435259
+          "height": 24984560,
+          "tx_count": 783,
+          "base_fee_gwei": 0.71,
+          "tps": 65.25,
+          "utilization": 99.98,
+          "timestamp": 1777451459
         },
         {
-          "height": 24983214,
-          "tx_count": 1155,
-          "base_fee_gwei": 0.54,
-          "tps": 96.25,
-          "utilization": 66.99,
-          "timestamp": 1777435271
+          "height": 24984561,
+          "tx_count": 345,
+          "base_fee_gwei": 0.8,
+          "tps": 28.75,
+          "utilization": 38.76,
+          "timestamp": 1777451471
         },
         {
-          "height": 24983215,
-          "tx_count": 854,
-          "base_fee_gwei": 0.56,
-          "tps": 71.17,
-          "utilization": 44.56,
-          "timestamp": 1777435283
+          "height": 24984562,
+          "tx_count": 566,
+          "base_fee_gwei": 0.78,
+          "tps": 47.17,
+          "utilization": 69.04,
+          "timestamp": 1777451483
         },
         {
-          "height": 24983216,
-          "tx_count": 684,
-          "base_fee_gwei": 0.56,
-          "tps": 57.0,
-          "utilization": 43.75,
-          "timestamp": 1777435295
+          "height": 24984563,
+          "tx_count": 378,
+          "base_fee_gwei": 0.82,
+          "tps": 31.5,
+          "utilization": 56.3,
+          "timestamp": 1777451495
         }
       ]
     },
     {
       "chain": "Bitcoin",
-      "block_height": 947100,
-      "tx_count": 3117,
-      "avg_fee_sat_vbyte": 2,
-      "tps": 3.44,
-      "utilization": 99.8,
+      "block_height": 947124,
+      "tx_count": 3646,
+      "avg_fee_sat_vbyte": 3,
+      "tps": 1.93,
+      "utilization": 99.79,
       "whales": [
         {
-          "txid": "90b06de42d04781f0c3ab6961808f0b7b0b4dbfa54283dbeb5efa9d6273a36e0",
-          "value_btc": 439.32
+          "txid": "4915f1b870432e420913df3a4f74c918dacbd3c8ebd53888da0d13810904bee0",
+          "value_btc": 121.4
         },
         {
-          "txid": "b4c2cc08df5851e900ed3e1a34d570ad66bb89db6d0aff6347771135999cc2c4",
-          "value_btc": 117.55
+          "txid": "786a8d7cc79107b8f98c8afcf83521d5fce301cd45e5c8b510f93b337f6c7a48",
+          "value_btc": 274.8
+        },
+        {
+          "txid": "c77f59502cccdf7c08d000988be5ab7258267fbee87e576d399724ecf403a29e",
+          "value_btc": 688.41
+        },
+        {
+          "txid": "0a1b26d0609d455eaee9da526dbadeb95bd2f01ad48453dc88177f754e9b9d12",
+          "value_btc": 1103.06
+        },
+        {
+          "txid": "eeddc179be54b314da3a5a973e8f31cc06139393f8ce1f6dbff658a8ed08b5a4",
+          "value_btc": 102.45
         }
       ],
       "history": [
         {
-          "height": 947091,
-          "tx_count": 4768,
-          "avg_fee_sat_vbyte": 1,
+          "height": 947115,
+          "tx_count": 1130,
+          "avg_fee_sat_vbyte": 2,
           "tps": 0.0,
-          "utilization": 99.79,
-          "timestamp": 1777426633
+          "utilization": 38.28,
+          "timestamp": 1777444852
         },
         {
-          "height": 947092,
-          "tx_count": 5132,
-          "avg_fee_sat_vbyte": 1,
-          "tps": 5.74,
+          "height": 947116,
+          "tx_count": 2419,
+          "avg_fee_sat_vbyte": 2,
+          "tps": 2.67,
           "utilization": 99.8,
-          "timestamp": 1777427527
+          "timestamp": 1777445757
         },
         {
-          "height": 947093,
-          "tx_count": 2819,
+          "height": 947117,
+          "tx_count": 4305,
+          "avg_fee_sat_vbyte": 0,
+          "tps": 18.32,
+          "utilization": 99.8,
+          "timestamp": 1777445992
+        },
+        {
+          "height": 947118,
+          "tx_count": 1995,
           "avg_fee_sat_vbyte": 2,
-          "tps": 2.65,
-          "utilization": 99.79,
-          "timestamp": 1777428592
+          "tps": 3.37,
+          "utilization": 74.4,
+          "timestamp": 1777446584
         },
         {
-          "height": 947094,
-          "tx_count": 4039,
+          "height": 947119,
+          "tx_count": 2755,
           "avg_fee_sat_vbyte": 1,
-          "tps": 4.84,
-          "utilization": 99.79,
-          "timestamp": 1777429426
-        },
-        {
-          "height": 947095,
-          "tx_count": 3378,
-          "avg_fee_sat_vbyte": 2,
-          "tps": 1.97,
+          "tps": 4.96,
           "utilization": 99.9,
-          "timestamp": 1777431137
+          "timestamp": 1777447140
         },
         {
-          "height": 947096,
-          "tx_count": 3034,
+          "height": 947120,
+          "tx_count": 1688,
           "avg_fee_sat_vbyte": 2,
-          "tps": 4.65,
-          "utilization": 99.79,
-          "timestamp": 1777431790
+          "tps": 2.8,
+          "utilization": 75.76,
+          "timestamp": 1777447743
         },
         {
-          "height": 947097,
-          "tx_count": 6927,
-          "avg_fee_sat_vbyte": 0,
-          "tps": 0.0,
-          "utilization": 99.8,
-          "timestamp": 1777431737
-        },
-        {
-          "height": 947098,
-          "tx_count": 3388,
+          "height": 947121,
+          "tx_count": 3179,
           "avg_fee_sat_vbyte": 3,
-          "tps": 1.38,
-          "utilization": 99.8,
-          "timestamp": 1777434193
+          "tps": 2.67,
+          "utilization": 99.9,
+          "timestamp": 1777448934
         },
         {
-          "height": 947099,
-          "tx_count": 4508,
-          "avg_fee_sat_vbyte": 0,
-          "tps": 50.09,
-          "utilization": 99.8,
-          "timestamp": 1777434283
+          "height": 947122,
+          "tx_count": 2859,
+          "avg_fee_sat_vbyte": 1,
+          "tps": 6.34,
+          "utilization": 99.89,
+          "timestamp": 1777449385
         },
         {
-          "height": 947100,
-          "tx_count": 3117,
+          "height": 947123,
+          "tx_count": 290,
           "avg_fee_sat_vbyte": 2,
-          "tps": 3.44,
-          "utilization": 99.8,
-          "timestamp": 1777435190
+          "tps": 3.41,
+          "utilization": 9.4,
+          "timestamp": 1777449470
+        },
+        {
+          "height": 947124,
+          "tx_count": 3646,
+          "avg_fee_sat_vbyte": 3,
+          "tps": 1.93,
+          "utilization": 99.79,
+          "timestamp": 1777451360
         }
       ]
     }
